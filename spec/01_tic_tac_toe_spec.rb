@@ -88,7 +88,7 @@ describe './lib/tic_tac_toe.rb' do
 
   describe '#position_taken?' do
     it 'returns true/false based on position in board' do
-      board = ["X", " ", " ", " ", " ", " ", " ", "", "O"]
+      board = ["X", " ", " ", " ", " ", " ", " ",, "O"]
 
       position = 0
       expect(position_taken?(board, position)).to be(true)
