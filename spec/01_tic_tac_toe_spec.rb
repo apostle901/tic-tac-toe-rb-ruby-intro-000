@@ -267,13 +267,13 @@ describe './lib/tic_tac_toe.rb' do
     it 'return true if position is taken' do
       board = ["X", " ", " ", " ", " ", " ", " ", " ", " "]
 
-      expect(position_taken?(0)).to be_truthy
+      expect(position_taken?(board, 0)).to be_truthy
     end
 
-    it 'return true if position is taken' do
+    it 'returns false if position is available' do
       board = ["X", " ", " ", " ", " ", " ", " ", " ", " "]
 
-      expect(position_taken?(4)).to be_falsey
+      expect(position_taken?(board, 4)).to be_falsey
     end
   end
 end
