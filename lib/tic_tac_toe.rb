@@ -82,6 +82,6 @@ def play(board)
   while !over?(board) do
     board = turn(board)
   end
-  puts "Congratulations #{win?(board).first}!" if win?(board)
-  puts "Cat's Game!" if !win?(board)
+  puts "Congratulations #{won?(board).first}!" if won?(board)
+  puts "Cat's Game!" if !won?(board)
 end
