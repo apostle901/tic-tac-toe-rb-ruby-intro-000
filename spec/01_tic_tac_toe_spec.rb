@@ -262,18 +262,4 @@ describe './lib/tic_tac_toe.rb' do
       expect(winner(board)).to be_nil
     end
   end
-
-  describe '#position_taken?' do
-    it 'return true if position is taken' do
-      board = ["X", " ", " ", " ", " ", " ", " ", " ", " "]
-
-      expect(position_taken?(board, 0)).to be_truthy
-    end
-
-    it 'returns false if position is available' do
-      board = ["X", " ", " ", " ", " ", " ", " ", " ", " "]
-
-      expect(position_taken?(board, 4)).to be_falsey
-    end
-  end
 end
