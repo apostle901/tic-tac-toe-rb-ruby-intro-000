@@ -103,7 +103,7 @@ describe './lib/tic_tac_toe.rb' do
       expect(position_taken?(board, position)).to be(false)
 
       position = 4
-      expect(position_taken?(board, position)).to be_falsey
+      expect(position_taken?(board, position)).to be(true)
     end
   end
 
