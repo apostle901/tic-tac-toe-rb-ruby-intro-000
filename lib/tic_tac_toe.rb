@@ -38,7 +38,7 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
-def move(board, index, current_player = "X")
+def move(board, index, current_player)
   board[index] = current_player
 end
 
@@ -80,8 +80,8 @@ end
 
 def play(board)
   while !over?(board) do
-    turn(board)
+    board = turn(board)
   end
-  puts "Congrats to #{win?(board).first} for winning" if win?(board)
-  puts "It's a draw" if !win?(board)
+  puts "Congratulations #{win?(board).first}!" if win?(board)
+  puts "Cat's Game!" if !win?(board)
 end
